@@ -1,6 +1,5 @@
-package com.codecool;
+package com.codecool.multiplesOfThreeOrFive;
 
-import java.util.List;
 import java.util.stream.Stream;
 
 public class MultiplesOfThreeOrFive {

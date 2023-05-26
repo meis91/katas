@@ -1,4 +1,4 @@
-package com.codecool;
+package com.codecool.sumStringAsInteger;
 
 public class SumStringAsInteger {
 
@@ -12,8 +12,7 @@ public class SumStringAsInteger {
 
     private long convertStringToLong(String input) {
         try {
-            long inputAsLong = Long.parseLong(input);
-            return inputAsLong;
+            return Long.parseLong(input);
         } catch (NumberFormatException e) {
             System.out.println("Invalid long: " + input);
             return 0;
@@ -29,19 +28,11 @@ public class SumStringAsInteger {
     }
 
     private boolean checkIfEmptyString(String input){
-        if(input.length() == 0){
-            return true;
-        } else {
-            return false;
-        }
+        return input.length() == 0;
     }
 
     private boolean checkIfLongerThenLong(String input){
-        if(input.length() > MAX_DIGITS_LONG){
-            return true;
-        } else {
-            return false;
-        }
+        return input.length() > MAX_DIGITS_LONG;
     }
 
 

@@ -1,4 +1,4 @@
-package com.codecool;
+package com.codecool.betweenExtremes;
 
 import java.util.stream.IntStream;
 

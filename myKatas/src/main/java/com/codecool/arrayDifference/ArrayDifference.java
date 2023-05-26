@@ -1,4 +1,4 @@
-package com.codecool;
+package com.codecool.arrayDifference;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,12 +1,12 @@
 package com.codecool;
 
+import com.codecool.pangramDetector.PangramDetector;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PangramDetectorTest {
     PangramDetector pangramDetector = new PangramDetector();
@@ -22,12 +22,11 @@ class PangramDetectorTest {
                 Arguments.of(true, "abdc defg hijk lmno pqrs tuvw xyzz1")
         );
     }
-
-    @ParameterizedTest
     @MethodSource("parameter")
+    @ParameterizedTest
     void isPangram(boolean expected, String input) {
         boolean actual = pangramDetector.isPangram(input);
 
-        assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 }
