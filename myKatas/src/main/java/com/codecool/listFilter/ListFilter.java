@@ -1,4 +1,4 @@
-package com.codecool.ListFilter;
+package com.codecool.listFilter;
 
 import java.util.List;
 
